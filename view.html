@@ -1,0 +1,205 @@
+<html>
+	<head>
+    <title>SidebarTV</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		
+		
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+  
+  <script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="util.js"></script>
+  
+  
+	</head>
+	<body ng-app="SideBarTvApp" ng-controller="SideBarTvCtrl" >
+       
+        <div id="container">
+           
+            <div class="panel panel-primary">
+               
+                <div class="panel-top panel-heading">
+                    <h1>SideBar<b>TV</b></h1>
+                    <a href=""><i class="fa fa-cog fa-2x"></i></a>
+                </div>
+                
+                <div class="panel-body">
+                   
+                    <div class="row-centered">
+                       
+                        <div class="panel panel-default">
+                          
+                           <div class="panel-heading">
+                              
+                               <div class="embed-responsive embed-responsive-16by9 ">
+                                  
+                                  <div id="player">
+                                    
+                                  </div>
+                            
+                               </div> <!-- /embed-responsive -->
+                               
+                           </div><!-- /panel-heading -->
+                            
+                        </div><!-- /panel-default -->
+                        
+                    </div><!-- /row-centered -->
+                    
+                    <div class="row-centered">
+                       
+                       <div class="panel">
+
+                               <div class="panel-add panel-default">
+                                   
+                                   <div class="panel-heading">
+                                        
+                                        <div class="row">
+
+                                            <div class="col-sm-11 col-xs-11">
+
+                                               <h4>
+                                                 Adicione um video a sua <b><i>playlist</i></b>!
+                                               </h4>
+
+                                               <input type="text" class="form-control" name="" value="" placeholder="">
+                                               
+                                            </div>
+
+                                            <div class="col-sm-1 col-xs-1">
+
+                                                <button id="btn-add" type="button" class="btn btn-default mais-informacoes">+</button>
+
+                                            </div>
+
+                                        </div>
+                              
+                                   </div> 
+
+                               </div>
+
+                           <ul id="sortable" class="list-unstyled">
+
+                               <li class="panel panel-default ui-state-default">
+
+                                   <div class="panel-video panel-heading">
+                                        
+                                        <div class="row">
+
+                                            <div class="col-sm-2 col-xs-2">
+
+                                                <img id="thumbnail" width="80" heigth="70">
+
+                                            </div>
+                                            
+                                            <div class="col-sm-9 col-xs-9">
+
+                                               <h3><a href="" title="">Video 1</a></h3>
+
+                                            </div>
+
+                                            <div class="col-sm-1 col-xs-1">
+
+                                                <!-- <input type="button" class="btn btn-default mais-informacoes" value="+"> -->
+                                                <input type="button" class="btn btn-default btn-fechar" value="x">
+
+                                            </div>
+
+                                        </div>
+                                    
+                                   </div>   
+
+                               </li>
+
+                               <li class="panel panel-default ui-state-default">
+
+
+                                   <div class="panel-video panel-heading">
+                                        
+                                        <div class="row">
+
+                                            <div class="col-sm-2 col-xs-2">
+
+                                                <img src="http://fakeimg.pl/50x50/">
+
+                                            </div>
+                                            
+                                            <div class="col-sm-9 col-xs-9">
+
+                                               <h3><a href="" title="">Video 2</a></h3>
+                                              
+                                            </div>
+
+                                             <div class="col-sm-1 col-xs-1">
+
+                                               <!--  <input type="button" class="btn btn-default mais-informacoes" value="+">
+                                                 -->
+                                                 <input type="button" class="btn btn-default btn-fechar" value="x">
+                                            </div>
+
+                                        </div>
+                                    
+                                   </div>              
+                               </li>
+                               <li class="panel panel-default ui-state-default">
+                                   
+                                   <div class="panel-video panel-heading">
+                                        
+                                        <div class="row">
+
+                                            <div class="col-sm-2 col-xs-2">
+
+                                                <img src="http://fakeimg.pl/50x50/">
+
+                                            </div>
+                                            
+                                            <div class="col-sm-9 col-xs-9">
+
+                                               <h3><a href="" title="">Video 3</a></h3>
+                                              
+                                            </div>
+
+                                             <div class="col-sm-1 col-xs-1">
+
+                                                <!-- <input type="button" class="btn btn-default mais-informacoes" value="+"> -->
+                                                <input type="button" class="btn btn-default btn-fechar" value="x">
+
+                                            </div>
+
+                                        </div>
+                                    
+                                   </div>   
+
+                               </li>
+
+                            </ul>
+                           
+                       </div><!-- /panel-success -->
+                       
+                     
+                     
+                    </div><!-- /row-centered -->
+                    
+                </div><!-- /panel-body -->
+                
+            </div><!-- /panel-primary -->
+                    
+        </div><!-- /container -->
+        	
+	</body>
+</html>
