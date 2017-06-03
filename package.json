@@ -1,0 +1,22 @@
+{
+  "name": "siderbartv",
+  "version": "1.0.0",
+  "description": "Playlist de videos de multiplayers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoBastos/siderbartv.git"
+  },
+  "keywords": [
+    "playlist"
+  ],
+  "author": "Rodrigo Bastos, Samuel das Chagas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoBastos/siderbartv/issues"
+  },
+  "homepage": "https://github.com/RodrigoBastos/siderbartv#readme"
+}
